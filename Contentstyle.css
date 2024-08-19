@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.Webcontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.Topmenu {
+    height: 100%;
+    height: 120px;
+    width: 100%;
+    background-color: #CDE8E5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 0px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.returnbutton {
+    background-color: rgb(88, 193, 235);
+    border: 1px solid transparent;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 11px;
+    padding-top: 25px;
+    margin-right: 10px;
+    width: 120px;
+    height: 80px;
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+}
+
+.Content {
+    background-color: #c9c9c9;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Content-Container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 350px;
+    margin-top: 120px;
+}
+
+/*navigation bar */
+
+.nav-container {
+    width: 350px;
+    margin-top: 120px;
+    background-color: #CDE8E5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 20;
+    z-index: 1;
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #dcdcdf;
+}
+
+.nav-item {
+    border-bottom: 1px solid #919191;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 20px;
+}
+
+.nav-item2 {
+    border-bottom: 1px solid #919191;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 20px;
+}
+
+.aboutus {
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 20px;
+    color: #2c3e50;
+    font-size: 26px;
+    font-family: "Kanit", sans-serif;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.aboutus:hover {
+    background-color: #60a2e0;
+}
+.nav-subitem {
+    border-bottom: 1px solid #d3d3d3;
+    border-top: 1px solid #191c4e;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding-top: 0;
+    margin-top: 0;
+    background-color: #ffffff;
+}
+
+.nav-subitem:hover {
+    background-color: #9cc9e7;
+}
+
+.sidebartext {
+    color: #2c3e50;
+    font-size: 26px;
+    font-family: "Kanit", sans-serif;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.nav-item:last-child {
+    border-bottom: none;
+}
+
+.nav-item:hover {
+    background-color: #60a2e0;
+}
+
+.nav-item.active {
+    background-color: #3d566e;
+    color: #1abc9c;
+}
+
+.scroll-containersidebar {
+    height: 843px;
+    overflow-y: scroll;
+}
+
+.scroll-container::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: #8d85dd;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #3f34e2;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.scroll-container::-webkit-scrollbar-button {
+    display: none;
+}
+
+
+/* slide dropdown */
+.slide {
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+    border-bottom: 1px solid #d3d3d3;
+  }
+
+  .slide li {
+    padding-top : 3px;
+}
+
+  span {
+    padding : 0;
+    margin: 0;
+    font-variant : small-caps;
+    cursor : pointer;
+  }
+  
+  span::after {
+    float: right;
+    content: "+";
+  }
+
+.subdropdownmenu {
+    font-family: "Kanit", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: #2a2d41;
+    padding-left: 60px;
+}
+
+#touch { /*แนะนำ CSS */
+    position: absolute;
+    opacity: 0; 
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#touch2 { /*หลักการเขียน CSS */
+    position: absolute;
+    opacity: 0; 
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#touch3 { /*หลักการเขียน CSS */
+    position: absolute;
+    opacity: 0; 
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+
+#touch:checked + .slide {height: 120px;}
+#touch2:checked + .slide {height: 400px;}
+#touch3:checked + .slide {height: 440px;}
+
+
+/*footer*/
+.bottombar {
+    background-color: #CDE8E5;
+    height: 150px;
+    font-family: "Bruno Ace", sans-serif;
+    margin-left: 0px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+/*Text Decoration*/
+
+.scroll-containercontent {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 48px;
+    padding-left: 20px;
+}
+p {
+    color: #2c3e50;
+    font-size: 24px;
+    padding-left: 40px;
+}
+
+.p-header {
+    color: #2c3e50;
+    font-size: 28px;
+    padding-left: 30px;
+}
+
+.content-section {
+    background-color: #ffffff;
+    color: #2c3e50;
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-bottom: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Kanit", sans-serif;
+}
+
+/*jump to section adjust */
+#CSSintro {
+    padding-top: 120px; /* ระยะห่างจากด้านบนที่พอเหมาะ */
+    margin-top: -120px; /* ค่าลบเท่ากับ padding */
+}
+
+#CSSHistory {
+    padding-top: 120px; 
+    margin-top: -120px;
+}
+
+#Good-Bad {
+    padding-top: 120px; 
+    margin-top: -120px; 
+}
+
+ #Main1 , #Main2 , #Main3 , #Main4 , #Main5 , #Main6 , #Main7 , #Main8 , #Main9 , #Main10 {   /* เพิ่มให้ถึง  main10 */
+    padding-top: 120px; 
+    margin-top: -120px; 
+}
+
+/* code box format*/
+.code-box {
+    background-color: #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    box-shadow: 2px 2px #a3a3a3;
+}
+
+.code-box h2 {
+    margin-top: 0;
+    font-size: 28px;
+    color: #2c3e50;
+    padding-left: 0;
+}
+
+pre {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    border-left: 5px solid #080746;
+    overflow-x: auto;
+}
+
+code {
+    font-family: "Kanit", sans-serif;
+    color: #131522;
+    white-space: pre;
+}

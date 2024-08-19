@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Topmenu {
+    height: 150px;
+    background-color: #68ddf1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 0px;
+}
+
+.returnbutton {
+    background-color: rgb(88, 193, 235);
+    border: 1px solid transparent;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 11px;
+    padding-top: 25px;
+    margin-right: 10px;
+    width: 120px;
+    height: 80px;
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+}
+
+.Head {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-family: monospace;
+    text-align: left;
+    padding-left: 15px;
+    font-family: "Bruno Ace", sans-serif;
+
+}
+
+.body {
+    font-family: "Kanit", sans-serif;;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e6e6e6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Kanit", sans-serif;
+    text-align: left;
+    font-size: 18px;
+}
+.question {
+    margin-bottom: 20px;
+}
+.question h3 {
+    margin: 0 0 10px;
+}
+.options label {
+    display: block;
+    margin-bottom: 10px;
+}
+.submit-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+}
