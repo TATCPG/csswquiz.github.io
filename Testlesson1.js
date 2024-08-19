@@ -7,7 +7,15 @@ function submitQuiz() { //fuction submitquiz
     const answers = {
         q1: 'Correct',
         q2: 'Correct',
-        q3: 'Correct'
+        q3: 'Correct',
+        q4: 'Correct',
+        q5: 'Correct',
+        q6: 'Correct',
+        q7: 'Correct',
+        q8: 'Correct',
+        q9: 'Correct',
+        q10: 'Correct'
+
     };
 
 

@@ -20,9 +20,9 @@ html {
     background-color: #CDE8E5;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
+    padding-right: 15px;
     justify-content: space-between;
-    padding-right: 0px;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -41,6 +41,19 @@ html {
     height: 80px;
     text-decoration: none;
     font-family: "Kanit", sans-serif;
+}
+
+.topbutton {
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutus {
+    color: #000000;
+    text-decoration: underline;
+    font-family: "Kanit", sans-serif;
+    padding-top: 25px;
+    margin-right: 50px;
 }
 
 .Content {
@@ -92,21 +105,6 @@ html {
     padding: 20px;
 }
 
-.aboutus {
-
-    cursor: pointer;
-    transition: background-color 0.3s;
-    padding: 20px;
-    color: #2c3e50;
-    font-size: 26px;
-    font-family: "Kanit", sans-serif;
-    text-decoration: none;
-    padding-left: 30px;
-}
-
-.aboutus:hover {
-    background-color: #60a2e0;
-}
 .nav-subitem {
     border-bottom: 1px solid #d3d3d3;
     border-top: 1px solid #191c4e;
@@ -143,7 +141,7 @@ html {
 }
 
 .scroll-containersidebar {
-    height: 843px;
+    height: 825px;
     overflow-y: scroll;
 }
 
