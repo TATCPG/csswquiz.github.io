@@ -22,7 +22,7 @@
 
 .Topmenu {
     height: 100%;
-    background-color: #CDE8E5;
+    background-color: #cde8e5;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -30,34 +30,43 @@
     padding-right: 0px;
 }
 
+.indexpic {
+    padding-top: 0px;
+    margin-left: 20px;
+    display: inline-block;
+}
 .bottombar {
     background-color: #CDE8E5;
     bottom: 100%;
     height: 200px;
     font-family: "Bruno Ace", sans-serif;
+    font-size: 24px;
+    padding-left: 50px;
+    padding-top: 15px;
 }
-
 .Content {
     /*background-color: #f51d1d; */
     display: flex;
-    flex-direction: column;
-    height: 70vh;
-    padding-top: 150px;
-    padding-left: 150px;
+    flex-direction: row;
+    color: black;
+    font-family: "Kanit", sans-serif;
+    text-align: left;
+    font-size: 26px;
+    padding-left: 100px;
+    padding-top: 250px;
+    padding-bottom: 0;
 }
+
 
 .ContentButtonGroup {
     /*background-color: rgb(87, 87, 150);*/
     display: flex;
     flex-direction: row;
     margin-top: 15px;
+    margin-left: 120px;
+    margin-bottom: 100px;
 }
-.CTEXT {
-    color: black;
-    font-family: "Kanit", sans-serif;
-    text-align: left;
-    font-size: 26px;
-}
+
 .box {
     width: 20px;
     height: 20px;

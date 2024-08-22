@@ -4,9 +4,18 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.NameTest {
+    font-family: "Kanit", sans-serif;
+    font-size: 36px;
+}
+
 .Topmenu {
     height: 150px;
-    background-color: #68ddf1;
+    background-color: #CDE8E5;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -15,7 +24,7 @@
 }
 
 .returnbutton {
-    background-color: rgb(88, 193, 235);
+    background-color: rgb(0, 0, 0);
     border: 1px solid transparent;
     text-align: center;
     color: #ffffff;
@@ -40,9 +49,13 @@
 
 .body {
     font-family: "Kanit", sans-serif;;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: rgb(237, 237, 237);
 }
 
 .container {
@@ -65,15 +78,57 @@
     display: block;
     margin-bottom: 10px;
 }
-.submit-btn {
+.btn {
     display: inline-block;
-    padding: 10px 20px;
     background-color: #28a745;
-    color: #fff;
+    color: #000000;
     border: none;
     cursor: pointer;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 3px;
+    text-decoration: none;
 }
-.result {
+.Resultst {
     margin-top: 20px;
     font-weight: bold;
+    background-color: #66d3c6;
+    text-align: center;
+    font-size: 28px;
+}
+
+.bottombar {
+    background-color: #CDE8E5;
+    bottom: 100%;
+    height: 150px;
+    font-family: "Bruno Ace", sans-serif;
+}
+
+.correct {
+    color: rgb(0, 0, 0);
+    background-color: rgb(117, 204, 164);
+
+}
+.incorrect {
+    color: rgb(0, 0, 0);
+    background-color: rgb(240, 112, 137);
+}
+
+#result {
+    padding-top: 1px; 
+    margin-top: -1px;
+}
+
+.btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }

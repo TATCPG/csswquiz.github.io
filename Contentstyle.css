@@ -227,8 +227,8 @@ html {
 
 
 
-#touch:checked + .slide {height: 120px;}
-#touch2:checked + .slide {height: 400px;}
+#touch:checked + .slide {height: 130px;}
+#touch2:checked + .slide {height: 395px;}
 #touch3:checked + .slide {height: 440px;}
 
 

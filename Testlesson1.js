@@ -1,7 +1,9 @@
 function submitQuiz() { //fuction submitquiz
     const resultElement = document.getElementById('result');
     const quizForm = document.getElementById('quizForm');
+    
     const formData = new FormData(quizForm);
+    const quizInputs = quizForm.querySelectorAll('input');
     //creat variable
     
     const answers = {
@@ -22,6 +24,27 @@ function submitQuiz() { //fuction submitquiz
     let score = 0;
     const totalQuestions = Object.keys(answers).length;
 
+    let allAnswered = true;
+        quizInputs.forEach(input => {
+            if (!quizForm[input.name].value) {
+                allAnswered = false;
+            }
+        });
+
+        if (!allAnswered) {
+            alert('Please answer all questions before submitting.');
+            return;
+        }
+
+        // Disable all inputs to prevent editing
+        quizInputs.forEach(input => {
+            input.disabled = true;
+        });
+
+         // Hide submit button and show retry button
+         document.querySelector('.btn[onclick="submitQuiz()"]').classList.add('hidden');
+         document.getElementById('retryButton').classList.remove('hidden');
+
     // Clear previous results
     resultElement.innerHTML = '';
     const questions = document.querySelectorAll('.question');
@@ -31,7 +54,8 @@ function submitQuiz() { //fuction submitquiz
         });
     });
 
-// Check answers and show correct/incorrect feedback
+
+    // Check answers and show correct/incorrect feedback
     for (let [question, answer] of formData.entries()) {
         const correctAnswer = answers[question];
         const questionElement = document.querySelector(`.question[data-question="${question}"]`);
@@ -44,5 +68,47 @@ function submitQuiz() { //fuction submitquiz
         }
     }
 
-    resultElement.textContent = `Your score is ${score} out of ${totalQuestions}`; //print score
+    function checkAnswer(questionName, correctAnswer, resultId) {
+        const userAnswer = document.querySelector(`input[name="${questionName}"]:checked`).value;
+        const resultElement = document.getElementById(resultId);
+
+        if (userAnswer === correctAnswer) {
+            resultElement.classList.add('correct');
+        } else {
+            resultElement.classList.add('incorrect');
+        }
+
+        resultElement.classList.remove('hidden');
+    }
+
+    resultElement.textContent = `คุณได้คะแนน ${score} จาก ${totalQuestions}`; //print score
 }
+
+function retryQuiz() {
+    const quizForm = document.getElementById('quizForm');
+    const quizInputs = quizForm.querySelectorAll('input');
+
+    // Enable all inputs and reset form
+    quizForm.reset();
+    quizInputs.forEach(input => {
+        input.disabled = false;
+    });
+
+    // Hide all result messages
+    const results = document.querySelectorAll('.result');
+    results.forEach(result => {
+        result.classList.add('hidden');
+        result.classList.remove('correct', 'incorrect');
+    });
+
+    // Remove 'correct' and 'incorrect' classes from all labels
+    const allLabels = document.querySelectorAll('label');
+    allLabels.forEach(label => {
+        label.classList.remove('correct', 'incorrect');
+    });
+
+    // Hide retry button and show submit button
+    document.querySelector('.btn[onclick="submitQuiz()"]').classList.remove('hidden');
+    document.getElementById('retryButton').classList.add('hidden');
+}
+

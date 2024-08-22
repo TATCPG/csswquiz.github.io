@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Teststyle.css">
-    <link rel="icon"href="./icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
@@ -18,10 +17,6 @@
         <a href="Content.html" class="returnbutton">หน้าหลัก</a>
     </div>
     <div class="container">
-        
-        <center><b><p class="NameTest">แบบฝึกหัดแนะนำ CSS</p></b></center>
-        <br>
-        <div class="Resultst" id="result"></div>
         <form id="quizForm">
             <div class="question" data-question="q1">
                 <h3>คำถามข้อที่ 1: CSS ย่อมาจากอะไร?</h3>
@@ -121,14 +116,10 @@
                 </div>
             </div>
 
-            <button type="button" class="btn" onclick="submitQuiz()" href="#result"><a href="#result" class="Submitbtn">Submit</a></button>
-            <button type="button" class="btn hidden" id="retryButton" onclick="retryQuiz()">Retry</button>
+            <button type="button" class="submit-btn" onclick="submitQuiz()">Submit</button>
         </form>
+        <div class="result" id="result"></div>
     </div>
-    <script src="Testlesson1.js"></script>
-    <div class="bottombar">
-        <p>Bussiness Computer</p>
-        <p>Thai-Austrain Technical Collece</p>
-    </div>
+    <script src="Testlesson2.js"></script>
 </body>
 </html>
