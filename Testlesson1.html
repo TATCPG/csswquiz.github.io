@@ -15,13 +15,17 @@
 <body>
     <div class="Topmenu">
         <p class="Head">CSS BASIC</p>
-        <a href="Content.html" class="returnbutton">หน้าหลัก</a>
+        <div class="topbutton">
+            <a class="next" href="Testlesson2.html">Next</a>
+            <a href="Content.html" class="returnbutton">หน้าหลัก</a>
+            </div>
+       
     </div>
     <div class="container">
         
         <center><b><p class="NameTest">แบบฝึกหัดแนะนำ CSS</p></b></center>
         <br>
-        <div class="Resultst" id="result"></div>
+        
         <form id="quizForm">
             <div class="question" data-question="q1">
                 <h3>คำถามข้อที่ 1: CSS ย่อมาจากอะไร?</h3>
@@ -123,6 +127,7 @@
 
             <button type="button" class="btn" onclick="submitQuiz()" href="#result"><a href="#result" class="Submitbtn">Submit</a></button>
             <button type="button" class="btn hidden" id="retryButton" onclick="retryQuiz()">Retry</button>
+            <div class="Resultst" id="result"></div>
         </form>
     </div>
     <script src="Testlesson1.js"></script>

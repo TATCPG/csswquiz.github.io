@@ -13,6 +13,19 @@ html {
     font-size: 36px;
 }
 
+.topbutton {
+    display: flex;
+    flex-direction: row;
+}
+
+.next {
+    color: #000000;
+    text-decoration: underline;
+    font-family: "Kanit", sans-serif;
+    padding-top: 25px;
+    margin-right: 50px;
+}
+
 .Topmenu {
     height: 150px;
     background-color: #CDE8E5;
