@@ -14,26 +14,122 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-    <div class="Webcontainer">
         <div class="Topmenu">
             <p class="Head">CSS WITH QUIZ</p>
             <a class="Start" href="Content.html">Get Start</a>
-        </div>
-        <div class="Content">
+        
+            </div>
+            <div class="Content">
             
-            <p style="height: 150px;">เว็บไซต์นี้ถูกสร้างขึ้นมาเพื่อสอนพื้นฐาน เรียนรู้การใช้งานภาษา CSS ในเว็บไซต์ของคุณ<br>
+            <p>เว็บไซต์นี้ถูกสร้างขึ้นมาเพื่อสอนพื้นฐาน เรียนรู้การใช้งานภาษา CSS ในเว็บไซต์ของคุณ<br>
             
             เพื่อให้คุณมีทักษะ ในการใช้งานภาษา CSS  เพื่อพัฒนาเว็บไซต์ของคุณให้ดียิ่งขั้น<br>
             
             เรามีบทเรียนพื้นฐานที่เพียงพอเพื่อให้คุณสามารถนำไปต่อยอดต่อได้</p>
-            <img src="indexpic.jpg" width="600px" height="350px" class="indexpic">
-    </div>
-    <div class="ContentButtonGroup">
-            <a class="Start2" href="Content.html">Get Start</a> <!-- เอาปุ่มไปไว้ด้านล่าง text -->
+            <div class="clocktest">
+                <div class="column">
+                    <div class="num">0</div>
+                    <div class="num">1</div>
+                    <div class="num">2</div>
+                  </div>
+                  <div class="column">
+                    <div class="num">0</div>
+                    <div class="num">1</div>
+                    <div class="num">2</div>
+                    <div class="num">3</div>
+                    <div class="num">4</div>
+                    <div class="num">5</div>
+                    <div class="num">6</div>
+                    <div class="num">7</div>
+                    <div class="num">8</div>
+                    <div class="num">9</div>
+                  </div>
+                  <div class="colon"></div>
+                  <div class="column">
+                    <div class="num">0</div>
+                    <div class="num">1</div>
+                    <div class="num">2</div>
+                    <div class="num">3</div>
+                    <div class="num">4</div>
+                    <div class="num">5</div>
+                  </div>
+                  <div class="column">
+                    <div class="num">0</div>
+                    <div class="num">1</div>
+                    <div class="num">2</div>
+                    <div class="num">3</div>
+                    <div class="num">4</div>
+                    <div class="num">5</div>
+                    <div class="num">6</div>
+                    <div class="num">7</div>
+                    <div class="num">8</div>
+                    <div class="num">9</div>
+                  </div>
+                  <div class="colon"></div>
+                  <div class="column">
+                    <div class="num">0</div>
+                    <div class="num">1</div>
+                    <div class="num">2</div>
+                    <div class="num">3</div>
+                    <div class="num">4</div>
+                    <div class="num">5</div>
+                  </div>
+                  <div class="column">
+                    <div class="num">0</div>
+                    <div class="num">1</div>
+                    <div class="num">2</div>
+                    <div class="num">3</div>
+                    <div class="num">4</div>
+                    <div class="num">5</div>
+                    <div class="num">6</div>
+                    <div class="num">7</div>
+                    <div class="num">8</div>
+                    <div class="num">9</div>
+                  </div>
+                  <script>
+                    let size = 40;
+    let columns = Array.from(document.getElementsByClassName('column'));
+    let d, c;
+    let classList = [ 'visible', 'close', 'far', 'far', 'distant', 'distant' ];
+    let use24HourClock = true;
+
+    function padClock(p, n) {
+	    return p + ('0' + n).slice(-2);
+    }   
+
+    function getClock() {
+	    d = new Date();
+	    return [
+			use24HourClock ? d.getHours() : (d.getHours() % 12 || 12),
+			d.getMinutes(),
+			d.getSeconds()
+		]
+		.reduce(padClock, '');
+}
+
+function getClass(n, i2) {
+	return classList.find((class_, classIndex) => Math.abs(n - i2) === classIndex) || '';
+}
+
+let loop = setInterval(() => {
+	c = getClock();
+
+	columns.forEach((ele, i) => {
+		let n = +c[i];
+		let offset = -n * size;
+		ele.style.transform = `translateY(calc(50vh + ${offset}px - ${size / 2}px))`;
+		Array.from(ele.children).forEach((ele2, i2) => {
+			ele2.className = 'num ' + getClass(n, i2);
+		});
+	});
+}, 200 + Math.E * 10);
+                  </script>
+            </div>
+            <div class="image-content">
+                <img src="indexpic.jpg" class="indexpic">
+            </div>
         </div>
-        
-    </div>
-        
+</div>
         <div class="bottombar">
             <p>Thai-Austrain Technical College</p>
             <br>
