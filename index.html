@@ -26,105 +26,10 @@
             เพื่อให้คุณมีทักษะ ในการใช้งานภาษา CSS  เพื่อพัฒนาเว็บไซต์ของคุณให้ดียิ่งขั้น<br>
             
             เรามีบทเรียนพื้นฐานที่เพียงพอเพื่อให้คุณสามารถนำไปต่อยอดต่อได้</p>
-            <div class="clocktest">
-                <div class="column">
-                    <div class="num">0</div>
-                    <div class="num">1</div>
-                    <div class="num">2</div>
-                  </div>
-                  <div class="column">
-                    <div class="num">0</div>
-                    <div class="num">1</div>
-                    <div class="num">2</div>
-                    <div class="num">3</div>
-                    <div class="num">4</div>
-                    <div class="num">5</div>
-                    <div class="num">6</div>
-                    <div class="num">7</div>
-                    <div class="num">8</div>
-                    <div class="num">9</div>
-                  </div>
-                  <div class="colon"></div>
-                  <div class="column">
-                    <div class="num">0</div>
-                    <div class="num">1</div>
-                    <div class="num">2</div>
-                    <div class="num">3</div>
-                    <div class="num">4</div>
-                    <div class="num">5</div>
-                  </div>
-                  <div class="column">
-                    <div class="num">0</div>
-                    <div class="num">1</div>
-                    <div class="num">2</div>
-                    <div class="num">3</div>
-                    <div class="num">4</div>
-                    <div class="num">5</div>
-                    <div class="num">6</div>
-                    <div class="num">7</div>
-                    <div class="num">8</div>
-                    <div class="num">9</div>
-                  </div>
-                  <div class="colon"></div>
-                  <div class="column">
-                    <div class="num">0</div>
-                    <div class="num">1</div>
-                    <div class="num">2</div>
-                    <div class="num">3</div>
-                    <div class="num">4</div>
-                    <div class="num">5</div>
-                  </div>
-                  <div class="column">
-                    <div class="num">0</div>
-                    <div class="num">1</div>
-                    <div class="num">2</div>
-                    <div class="num">3</div>
-                    <div class="num">4</div>
-                    <div class="num">5</div>
-                    <div class="num">6</div>
-                    <div class="num">7</div>
-                    <div class="num">8</div>
-                    <div class="num">9</div>
-                  </div>
-                  <script>
-                    let size = 40;
-    let columns = Array.from(document.getElementsByClassName('column'));
-    let d, c;
-    let classList = [ 'visible', 'close', 'far', 'far', 'distant', 'distant' ];
-    let use24HourClock = true;
-
-    function padClock(p, n) {
-	    return p + ('0' + n).slice(-2);
-    }   
-
-    function getClock() {
-	    d = new Date();
-	    return [
-			use24HourClock ? d.getHours() : (d.getHours() % 12 || 12),
-			d.getMinutes(),
-			d.getSeconds()
-		]
-		.reduce(padClock, '');
-}
-
-function getClass(n, i2) {
-	return classList.find((class_, classIndex) => Math.abs(n - i2) === classIndex) || '';
-}
-
-let loop = setInterval(() => {
-	c = getClock();
-
-	columns.forEach((ele, i) => {
-		let n = +c[i];
-		let offset = -n * size;
-		ele.style.transform = `translateY(calc(50vh + ${offset}px - ${size / 2}px))`;
-		Array.from(ele.children).forEach((ele2, i2) => {
-			ele2.className = 'num ' + getClass(n, i2);
-		});
-	});
-}, 200 + Math.E * 10);
-                  </script>
-            </div>
+              <div class="mainbuttongroup">
+                <a class="Start2" href="Content.html">Get Start</a>
+                <a class="Start2" href="aboutus.html">เกี่ยวกับเรา</a>
+              </div>
             <div class="image-content">
                 <img src="indexpic.jpg" class="indexpic">
             </div>

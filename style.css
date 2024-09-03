@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .Head {
     color: rgb(0, 0, 0);
     font-size: 3em;
@@ -18,45 +24,6 @@ p {
     width: 900;
 }
 
-.clocktest {
-    position: absolute;
-    top: -100px;
-    left: 45%;
-}
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300');
- .column, .colon {
-	 display: inline-block;
-	 vertical-align: top;
-	 font-size: 40px;
-	 line-height: 40px;
-}
- .column {
-	 transition: transform 300ms;
-}
- .colon {
-	 transition: transform 300ms;
-	 transform: translateY(calc(50vh - 25px));
-}
- .colon:after {
-	 content: ':';
-}
- .num {
-	 transition: opacity 500ms, text-shadow 100ms;
-	 opacity: 0.025;
-}
- .num.visible {
-	 opacity: 1;
-	 text-shadow: 1px 1px 0px #369;
-}
- .num.close {
-	 opacity: 0.35;
-}
- .num.far {
-	 opacity: 0.15;
-}
- .num.distant {
-	 opacity: 0;
-}
 
 
 .Webcontainer {
@@ -76,6 +43,12 @@ p {
     width: 100%;
 }
 
+.mainbuttongroup {
+    position: absolute;
+    /* background-color: black; */
+    bottom: 40%;
+}
+
 .image-content{
     position: relative;
     margin-left: 2%;
@@ -87,12 +60,12 @@ p {
 .bottombar {
     background-color: #d3f1f1;
     width: 100%;
-    bottom: 100;
+    bottom: 0;
     text-align: center;
     padding-top: 2%;
     padding-bottom: 2%;
     margin-top: auto; /* Pushes the footer to the bottom */
-    margin-top: 35px;
+    position: absolute;
 }
 
 .Content {
@@ -105,7 +78,7 @@ p {
     font-size: 26px;
     padding-left: 10%;
     padding-top: 5%;
-    margin-top: 5%;
+    margin-top: 2%;
     position: relative;
 
 }
@@ -197,15 +170,16 @@ p {
 }
 
 .Start2 {
-    /* background-color: rgb(88, 193, 235); */
+    background-color: rgb(88, 193, 235);
     border: 1px solid transparent;
     text-align: center;
     color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 50px;
     border-radius: 11px;
-    padding-top: 25px;
-    margin-right: 10px;
-    width: 120px;
-    height: 80px;
+    padding: 20px 20px 20px 20px;
+    margin-right: 25px;
+    justify-content: space-between;
     text-decoration: none;
     font-family: "Kanit", sans-serif;
 }

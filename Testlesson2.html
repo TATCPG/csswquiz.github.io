@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Teststyle.css">
+    <link rel="icon"href="./icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
@@ -14,112 +15,122 @@
 <body>
     <div class="Topmenu">
         <p class="Head">CSS BASIC</p>
-        <a href="Content.html" class="returnbutton">หน้าหลัก</a>
+        <div class="topbutton">
+            <a class="next" href="Testlesson3.html">Next</a>
+            <a href="Content.html" class="returnbutton">หน้าหลัก</a>
+            </div>
     </div>
     <div class="container">
+        <center><b><p class="NameTest">แบบฝึกหัดการเรียกใช้งาน</p></b></center>
+        <br>
         <form id="quizForm">
             <div class="question" data-question="q1">
-                <h3>คำถามข้อที่ 1: CSS ย่อมาจากอะไร?</h3>
+                <h3>คำถามข้อที่ 1: ข้อใดไม่ใช่วิธีการเรียกใช้งาน CSS</h3>
                 <div class="options">
-                    <label><input type="radio" name="q1" value="Correct"> Cascading Style Sheet</label>
-                    <label><input type="radio" name="q1" value="Incorrect"> Code Style Sheet</label>
-                    <label><input type="radio" name="q1" value="Incorrect"> Customize Style Sheet</label>
-                    <label><input type="radio" name="q1" value="Incorrect"> Custom Style Sheet</label>
+                    <label><input type="radio" name="q1" value="Incorrect"> External </label>
+                    <label><input type="radio" name="q1" value="Incorrect"> Inline</label>
+                    <label><input type="radio" name="q1" value="Incorrect"> Internal</label>
+                    <label><input type="radio" name="q1" value="Correct"> Build-in</label>
                 </div>
             </div>
             <div class="question" data-question="q2">
-                <h3>คำถามข้อที่ 2: CSS ใช้ทำอะไร?</h3>
+                <h3>คำถามข้อที่ 2: "สามารถเปลี่ยนรูปลักษณ์ของทั้งเว็บไซต์ได้โดยการเปลี่ยนแปลงแค่ไฟล์เดียวเท่านั้น" เป็นคุณสมบัติของข้อใด?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q2" value="Incorrect"> ใช้สำหรับสร้างโครงสร้างของหน้าเว็บ</label>
-                    <label><input type="radio" name="q2" value="Correct"> ใช้ในการจัดการสไตล์และการออกแบบของหน้าเว็บ</label>
-                    <label><input type="radio" name="q2" value="Incorrect"> ใช้ในการเขียนโปรแกรมฝั่งเซิร์ฟเวอร์</label>
-                    <label><input type="radio" name="q2" value="Incorrect"> ใช้สำหรับจัดเก็บข้อมูลของผู้ใช้งาน</label>
+                    <label><input type="radio" name="q2" value="Incorrect"> Internal</label>
+                    <label><input type="radio" name="q2" value="Correct"> External</label>
+                    <label><input type="radio" name="q2" value="Incorrect"> Inline</label>
+                    <label><input type="radio" name="q2" value="Incorrect"> ไม่มีข้อใดถูก</label>
                 </div>
             </div>
             <div class="question" data-question="q3">
-                <h3>คำถามข้อที่ 3: CSS สามารถเรียกใช้ได้กี่รูปแบบ</h3>
+                <h3>คำถามข้อที่ 3: "ใช้สไตล์ชีตในหน้า HTML หน้าเดียวมีสไตล์ที่ไม่ซ้ํากัน ลักษณะภายในถูกกําหนดภายในส่วนหัว" เป็นคุณสมบัติของข้อใด?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q3" value="Incorrect"> 1</label>
-                    <label><input type="radio" name="q3" value="Incorrect"> 2</label>
-                    <label><input type="radio" name="q3" value="Correct"> 3</label>
-                    <label><input type="radio" name="q3" value="Incorrect"> 4</label>
+                    <label><input type="radio" name="q3" value="Correct"> Internal</label>
+                    <label><input type="radio" name="q3" value="Incorrect"> Inline</label>
+                    <label><input type="radio" name="q3" value="Incorrect"> External</label>
+                    <label><input type="radio" name="q3" value="Incorrect"> ไม่มีข้อใดถูก</label>
                 </div>
             </div>
 
             <div class="question" data-question="q4">
-                <h3>คำถามข้อที่ 4: ในช่วงกลางทศวรรษที่ 1990 เว็บเบราเซอร์เริ่มมีการสนับสนุน HTML แต่ยังขาดสิ่งใดที่ทำให้ HTML ไม่สามารถควบคุมการแสดงผลได้ดี?</h3>
+                <h3>คำถามข้อที่ 4: "ใช้เพื่อกำหนดลักษณะที่ไม่ซ้ํากันสําหรับองค์ประกอบเดียว เป็นคุณสมบัติของข้อใด?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q4" value="Incorrect"> เครื่องมือในการออกแบบ</label>
-                    <label><input type="radio" name="q4" value="Correct"> เครื่องมือในการควบคุมการแสดงผล</label>
-                    <label><input type="radio" name="q4" value="Incorrect"> เครื่องมือในการจัดการข้อมูล</label>
-                    <label><input type="radio" name="q4" value="Incorrect"> เครื่องมือในการเขียนโปรแกรม</label>
+                    <label><input type="radio" name="q4" value="Incorrect"> External</label>
+                    <label><input type="radio" name="q4" value="Incorrect"> Internal</label>
+                    <label><input type="radio" name="q4" value="Correct"> Inline</label>
+                    <label><input type="radio" name="q4" value="Incorrect"> ไม่มีข้อใดถูก</label>
                 </div>
             </div>
 
             <div class="question" data-question="q5">
-                <h3>คำถามข้อที่ 5: ใครคือผู้ที่เสนอแนวคิดของ CSS ขึ้นในปี 1994?</h3>
+                <h3>คำถามข้อที่ 5:  &lt;h1 style="color:blue;text-align:center;"&gt; This is a heading?&lt;/h1&gt; การเขียนในรูปแบบนี้คือข้อใด?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q5" value="Incorrect"> Tim Berners-Lee</label>
-                    <label><input type="radio" name="q5" value="Correct"> Håkon Wium Lie</label>
-                    <label><input type="radio" name="q5" value="Incorrect"> World Wide Web Consortium (W3C)</label>
-                    <label><input type="radio" name="q5" value="Incorrect"> Marc Andreessen</label>
+                    <label><input type="radio" name="q5" value="Incorrect"> Internal</label>
+                    <label><input type="radio" name="q5" value="Correct"> Inline</label>
+                    <label><input type="radio" name="q5" value="Incorrect"> External</label>
+                    <label><input type="radio" name="q5" value="Incorrect"> Build-in</label>
                 </div>
             </div>
 
             <div class="question" data-question="q6">
-                <h3>คำถามข้อที่ 6: ในเดือนธันวาคม 1996, องค์กรใดที่เผยแพร่ CSS ระดับ 1 (CSS1)?</h3>
+                <h3>คำถามข้อที่ 6: &lt;link rel="stylesheet" href="Contentstyle.css"&gt; การเขียนในรูปแบบนี้คือข้อใด?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q6" value="Incorrect"> Microsoft</label>
-                    <label><input type="radio" name="q6" value="Incorrect"> Netscape</label>
-                    <label><input type="radio" name="q6" value="Correct"> World Wide Web Consortium (W3C)</label>
-                    <label><input type="radio" name="q6" value="Incorrect"> Apple</label>
+                    <label><input type="radio" name="q6" value="Incorrect"> Build-in</label>
+                    <label><input type="radio" name="q6" value="Incorrect"> Inline</label>
+                    <label><input type="radio" name="q6" value="Correct"> External</label>
+                    <label><input type="radio" name="q6" value="Incorrect"> Internal</label>
                 </div>
             </div>
 
             <div class="question" data-question="q7">
-                <h3>คำถามข้อที่ 7: CSS1 ได้รับการพัฒนาเพื่อจัดการกับอะไรบ้าง?</h3>
+                <h3>คำถามข้อที่ 7: &lt;link rel="stylesheet" href="Contentstyle.css"&gt; "Contentstyle.css" ในส่วนนี้คืออะไร?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q7" value="Correct"> สี, การวางตำแหน่งขององค์ประกอบ HTML</label>
-                    <label><input type="radio" name="q7" value="Incorrect"> ภาพและกราฟิก</label>
-                    <label><input type="radio" name="q7" value="Incorrect"> การจัดการเซิร์ฟเวอร์</label>
-                    <label><input type="radio" name="q7" value="Incorrect"> การพัฒนาเกม</label>
+                    <label><input type="radio" name="q7" value="Correct"> ชื่อ stylesheet</label>
+                    <label><input type="radio" name="q7" value="Incorrect"> ชื่อไฟล์</label>
+                    <label><input type="radio" name="q7" value="Incorrect"> Link เนื้อหา</label>
+                    <label><input type="radio" name="q7" value="Incorrect"> ประเภทไฟล์</label>
                 </div>
             </div>
 
             <div class="question" data-question="q8">
-                <h3>คำถามข้อที่ 8: CSS2 ถูกเผยแพร่ในปีใด?</h3>
+                <h3>คำถามข้อที่ 8: Internal CSS จะถูกใส่ไว้ในส่วนไดของ Html?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q8" value="Incorrect"> 1996</label>
-                    <label><input type="radio" name="q8" value="Correct"> 1998</label>
-                    <label><input type="radio" name="q8" value="Incorrect"> 2000</label>
-                    <label><input type="radio" name="q8" value="Incorrect"> 2002</label>
+                    <label><input type="radio" name="q8" value="Incorrect"> html</label>
+                    <label><input type="radio" name="q8" value="Incorrect"> title</label>
+                    <label><input type="radio" name="q8" value="Incorrect"> body</label>
+                    <label><input type="radio" name="q8" value="Correct"> Head</label>
                 </div>
             </div>
 
             <div class="question" data-question="q9">
-                <h3>คำถามข้อที่ 9: คุณสมบัติใดที่ CSS2 เพิ่มเข้ามา?</h3>
+                <h3>คำถามข้อที่ 9: External , Inline , Internal สามารถใช้ร่วมกันได้หรือไม่?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q9" value="Correct"> การรองรับสื่อชนิดต่าง ๆ (media types)</label>
-                    <label><input type="radio" name="q9" value="Incorrect"> การจัดการโครงสร้างข้อมูล</label>
-                    <label><input type="radio" name="q9" value="Incorrect"> การเชื่อมต่อเครือข่าย</label>
-                    <label><input type="radio" name="q9" value="Incorrect"> การควบคุมเสียง</label>
+                    <label><input type="radio" name="q9" value="Correct"> ใช้ร่วมกันได้ทั้งหมด</label>
+                    <label><input type="radio" name="q9" value="Incorrect"> ไม่ได้</label>
+                    <label><input type="radio" name="q9" value="Incorrect"> สามารถเลือกใช้ได้แค่อย่างเดียวเท่านั้น</label>
+                    <label><input type="radio" name="q9" value="Incorrect"> ได้เฉพาะ External กับ Inline</label>
                 </div>
             </div>
 
             <div class="question" data-question="q10">
-                <h3>คำถามข้อที่ 10: CSS3 มีคุณสมบัติใดที่สำคัญในการพัฒนาเว็บในยุคปัจจุบัน?</h3>
+                <h3>คำถามข้อที่ 10: การใช้ CSS แบบใดยอดนิยมที่สุด?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q10" value="Correct"> โมดูลเลย์เอาต์ (layout modules)</label>
-                    <label><input type="radio" name="q10" value="Incorrect"> การควบคุมเสียงและวิดีโอ</label>
-                    <label><input type="radio" name="q10" value="Incorrect"> การจัดการเซิร์ฟเวอร์</label>
-                    <label><input type="radio" name="q10" value="Incorrect"> การเชื่อมต่อกับฐานข้อมูล</label>
+                    <label><input type="radio" name="q10" value="Correct"> External</label>
+                    <label><input type="radio" name="q10" value="Incorrect"> Inline</label>
+                    <label><input type="radio" name="q10" value="Incorrect"> Internal</label>
+                    <label><input type="radio" name="q10" value="Incorrect"> Build-in</label>
                 </div>
             </div>
-
-            <button type="button" class="submit-btn" onclick="submitQuiz()">Submit</button>
+            
+            <button type="button" class="btn" onclick="submitQuiz()" href="#result"><a href="#result" class="Submitbtn">Submit</a></button>
+            <button type="button" class="btn hidden" id="retryButton" onclick="retryQuiz()">Retry</button>
+            <div class="Resultst" id="result"></div>
         </form>
-        <div class="result" id="result"></div>
     </div>
     <script src="Testlesson2.js"></script>
+    <div class="bottombar">
+        <p>Bussiness Computer</p>
+        <p>Thai-Austrain Technical Collece</p>
+    </div>
 </body>
 </html>
