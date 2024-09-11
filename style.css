@@ -324,8 +324,9 @@ p {
 
 .Textmain {
   font-family: "Kanit", sans-serif;
-  font-size: 3rem;
-  padding-left: 44%;
+  font-size: 4rem;
+  padding-left: 42%;
+  margin-bottom: 2%;
 }
 
 .imggroup {
