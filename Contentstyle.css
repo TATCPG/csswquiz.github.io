@@ -811,3 +811,110 @@ code {
 
     } */
 }
+
+/* for ipad */
+/* for ipad */
+/* for ipad */
+/* for ipad */
+@media screen 
+    and (max-width: 1280px)
+    and (min-width: 760px)
+    {
+
+    .home-content {
+        display: none;
+        visibility: collapse;
+    }
+
+   .sidebar {
+      visibility: collapse;
+      display: none;
+   }
+
+   .home-section{
+    visibility: collapse;
+    display: none;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Content {
+    background-color: #c9c9c9;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+    max-width: 100%;
+}
+
+#touch:checked + .slide {height: 9vh;}
+#touch2:checked + .slide {height: 30vh;}
+#touch3:checked + .slide {height: 32vh;}
+
+.content-section {
+    background-color: #ffffff;
+    color: #2c3e50;
+    padding-top: 20px;
+    padding-right: 0;
+    padding-bottom: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Kanit", sans-serif;
+    width: 100%;
+    left: 0;
+}
+
+.Content-Container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 2.5vh;
+    margin-left: 23vh;
+    margin-top: 14.5vh;
+}
+
+.bottombar {
+    background-color: #CDE8E5;
+    height: 25vh;
+    font-family: "Bruno Ace", sans-serif;
+    padding-left: 6vh;
+    bottom: 0;
+    max-width: 100%;
+    font-size: 0.2rem;
+    margin-top: 5vh;
+}
+
+.lastfooter {
+    font-size: 1.2rem;
+    padding-left: 0.5%;
+    margin-bottom: 1vh;
+}
+
+.lastfooterLink {
+    font-size: 0.8rem;
+    padding-left: 0.5%;
+    margin-top: 1vh;
+}
+
+.scroll-containersidebar {
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+    
+
+    /* For different page */
+    /* For different page */
+    /* .Content-Containerpage1 {
+        mar
+    }
+
+    .content-sectionpage1 {
+
+    } */
+}
