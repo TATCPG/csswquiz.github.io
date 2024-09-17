@@ -176,32 +176,77 @@
               </script>
                 <div class="Content-Container">
                     <div class="content-section">
-                        <div id="CSSintro"></div>
-                        <h2>แนะนำ CSS ขั้นพื้นฐาน</h2>
-                        <p>CSS คือ ภาษาที่ใช้สำหรับตกแต่งเอกสาร HTML/XHTML ให้มีหน้าตา สีสัน ระยะห่าง พื้นหลัง เส้นขอบและอื่นๆ ตามที่ต้องการ</p>
-                        <p>CSS ย่อมาจาก Cascading Style Sheets</p> 
-                        <p>มีลักษณะเป็นภาษาที่มีรูปแบบในการเขียน Syntax แบบเฉพาะและได้ถูกกำหนดมาตรฐานโดย W3C</p>
-                        <p>เป็นภาษาหนึ่งในการตกแต่งเว็บไซต์ ได้รับความนิยมอย่างแพร่หลาย</p>
-                        <div class="code-box">
-                            <h2>ตัวอย่าง CSS</h2>
-                            <pre><code class="language-css">
-                    body {
-                        background-color: lightblue;
-                    }
+                              <h2 id="Main4">การใช้งาน color</h2>  
+                                <p>ระบุสีโดยใช้ชื่อสีที่กำหนดไว้ล่วงหน้า หรือค่า RGB, HEX, HSL, RGBA, HSLA</p>
+                                <br>
+                                <p>ตัวอย่างชื่อสีที่กำหนดไว้ล่วงหน้า</p>
+                                <div style="width: 200px; height: 100px; background-color: red; text-align: center; padding-top: 30px; font-size: 30px; color: #000; margin-left: 40px;">
+                                    Red
+                                </div>
+                                <div style="width: 200px; height: 100px; background-color: rgb(42, 5, 255); text-align: center; padding-top: 30px; font-size: 30px; color: #000; margin-left: 40px;">
+                                    Blue
+                                </div>
+                                <div style="width: 200px; height: 100px; background-color: rgb(0, 255, 55); text-align: center; padding-top: 30px; font-size: 30px; color: #000; margin-left: 40px;">
+                                    green
+                                </div>
+                                <div style="width: 200px; height: 100px; background-color: rgb(255, 251, 0); text-align: center; padding-top: 30px; font-size: 30px; color: #000; margin-left: 40px;">
+                                    Yellow
+                                </div>
+                                <div class="code-box">
+                                    <h2>Color</h2>
+                                    <pre><code class="language-css">
+                                    p {
+                                        Color: red;
+                                    }
+
+                                    h1 {
+                                        Color: red;
+                                    }
+                                        </code></pre></div>
+                                        <br>
+                                        <p class="p-header"><b>ค่า RGB</b></p>
+                                        <br>
+                                        <p>   ใน CSS สามารถระบุสีเป็นค่า RGB ได้โดยใช้สูตรนี้:</p>
+                                            
+                                        <p>rgb( แดง, เขียว , น้ำเงิน )</p>
+                                            
+                                        <p>พารามิเตอร์แต่ละตัว (สีแดง สีเขียว และสีน้ำเงิน) จะกำหนดความเข้มของสีระหว่าง 0 ถึง 255</p>
+                                            
+                                        <p>ตัวอย่างเช่น rgb(255, 0, 0) จะแสดงเป็นสีแดง เนื่องจากสีแดงถูกตั้งค่าเป็นค่าสูงสุด (255) และค่าอื่นๆ จะถูกตั้งค่าเป็น 0</p>
+                                            
+                                        <p>หากต้องการแสดงสีดำ ให้ตั้งค่าพารามิเตอร์สีทั้งหมดเป็น 0 เช่นนี้: rgb(0, 0, 0)</p>
+                                            
+                                        <p>หากต้องการแสดงสีขาว ให้ตั้งค่าพารามิเตอร์สีทั้งหมดเป็น 255 เช่นนี้: rgb(255, 255, 255)</p>
+                                        <br>
+                                        <br>
+                                        <p class="p-header"><b>ค่า HEX</b></p>
+                                        <br>
+                                        <p>ใน CSS สามารถระบุสีได้โดยใช้ค่าเลขฐานสิบหกในรูปแบบ:</p>
+
+                                        <p># rrggbb</p>
+
+                                        <p>โดยที่ rr (สีแดง), gg (สีเขียว) และ bb (สีน้ำเงิน) เป็นค่าเลขฐานสิบหกระหว่าง 00 ถึง ff (เช่นเดียวกับเลขฐานสิบ 0-255)</p>
+
+                                        <p>ตัวอย่างเช่น #ff0000 จะแสดงเป็นสีแดง เนื่องจากสีแดงถูกตั้งค่าเป็นค่าสูงสุด (ff) และสีอื่นๆ จะถูกตั้งค่าเป็นค่าต่ำสุด (00)</p>
+
+                                        <p>หากต้องการแสดงเป็นสีดำ ให้ตั้งค่าทั้งหมดเป็น 00 เช่นนี้: #000000</p>
+
+                                        <p>หากต้องการแสดงเป็นสีขาว ให้ตั้งค่าทั้งหมดเป็น ff เช่นนี้: #ffffff </p>
+
+                                        <br>
+                                        <p class="p-header"><b>ค่า HSL</b></p>
+                                        <br>
+                                        <p>ใน CSS สามารถระบุสีได้โดยใช้เฉดสี ความอิ่มตัว และความสว่าง (HSL) ในรูปแบบ:</p>
+
+                                        <p>hsl( เฉดสี , ​​ความอิ่มตัว , ความสว่าง )</p>
+
+                                        <p>ฮิว (Hue) คือระดับบนวงล้อสีตั้งแต่ 0 ถึง 360 โดย 0 คือสีแดง 120 คือสีเขียว และ 240 คือสีน้ำเงิน</p>
+
+                                        <p>ความอิ่มตัวเป็นค่าเปอร์เซ็นต์ โดย 0% หมายถึงเฉดสีเทา และ 100% คือสีเต็มรูปแบบ</p>
+
+                                        <p>ความสว่างก็เป็นเปอร์เซ็นต์เช่นกัน 0% คือสีดำ 50% คือไม่สว่างหรือมืด 100% คือสีขาว</p>
                     
-                    h1 {
-                        color: white;
-                        text-align: center;
-                    }
-                    
-                    p {
-                        font-family: verdana;
-                        font-size: 20px;
-                    }
-                            </code></pre>
-                        
-                            </div>              
-                        </div>
+                    </div>
                     <div class="bottombar">
                         <p class="lastfooter">Thai-Austrain Technical College</p>
                         <br>

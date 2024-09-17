@@ -176,32 +176,71 @@
               </script>
                 <div class="Content-Container">
                     <div class="content-section">
-                        <div id="CSSintro"></div>
-                        <h2>แนะนำ CSS ขั้นพื้นฐาน</h2>
-                        <p>CSS คือ ภาษาที่ใช้สำหรับตกแต่งเอกสาร HTML/XHTML ให้มีหน้าตา สีสัน ระยะห่าง พื้นหลัง เส้นขอบและอื่นๆ ตามที่ต้องการ</p>
-                        <p>CSS ย่อมาจาก Cascading Style Sheets</p> 
-                        <p>มีลักษณะเป็นภาษาที่มีรูปแบบในการเขียน Syntax แบบเฉพาะและได้ถูกกำหนดมาตรฐานโดย W3C</p>
-                        <p>เป็นภาษาหนึ่งในการตกแต่งเว็บไซต์ ได้รับความนิยมอย่างแพร่หลาย</p>
-                        <div class="code-box">
-                            <h2>ตัวอย่าง CSS</h2>
-                            <pre><code class="language-css">
-                    body {
-                        background-color: lightblue;
-                    }
-                    
-                    h1 {
-                        color: white;
-                        text-align: center;
-                    }
-                    
-                    p {
-                        font-family: verdana;
-                        font-size: 20px;
-                    }
-                            </code></pre>
-                        
-                            </div>              
-                        </div>
+                           
+                                <h2 id="Main7">การใช้งาน Border</h2>
+                                <p>border ใน CSS ใช้สำหรับกำหนดขอบรอบองค์ประกอบ (elements) บนหน้าเว็บ <br>
+                                    การใช้งาน border มีความยืดหยุ่นสูง สามารถกำหนดสี ความหนา และรูปแบบของเส้นขอบได้ตามต้องการ</p>
+                                    <br>
+                                <p><b>การใช้งานพื้นฐานของ border</b></p>
+                                <p>คุณสามารถกำหนดขอบให้กับองค์ประกอบ HTML โดยใช้คุณสมบัติ border ดังนี้</p>
+                                <div class="code-box">
+                                    <h2>ตัวอย่าง CSS</h2>
+                                    <pre><code class="language-css">
+                                        selector {
+                                            border: [ความหนา] [รูปแบบเส้น] [สี];
+                                        }
+                                        </code></pre></div>
+                                        <br>
+                                        <p><b>ตัวอย่างการใช้งาน</b></p> 
+                                        <div class="code-box">
+                                            <h2>ตัวอย่าง CSS</h2>
+                                            <pre><code class="language-css">
+                                                .Start {
+                                                    background-color: rgb(0, 0, 0);
+                                                    border: 1px solid transparent;
+                                                    text-align: center;
+                                                    color: #ffffff;
+                                                    margin-top: 50px;
+                                                    margin-bottom: 50px;
+                                                    border-radius: 11px;
+                                                    padding: 30px 30px 30px 30px;
+                                                    margin-right: 10vh;
+                                                    justify-content: space-between;
+                                                    text-decoration: none;
+                                                    font-family: "Kanit", sans-serif;
+                                                }
+                                                </code></pre></div>
+                                                <br>
+                                                <p><b>คุณสมบัติของ border</b></p>
+                                                <p>คุณสามารถกำหนดคุณสมบัติของ border แยกกันได้ ดังนี้<br>
+                                                    <br>
+                                                    1. border-width: กำหนดความหนาของเส้นขอบ เช่น border-width: 2px<br>
+                                                    2. border-style: กำหนดรูปแบบของเส้นขอบ เช่น solid, dashed, dotted, double, groove, ridge, inset, outset, หรือ none (ไม่มีเส้นขอบ)<br>
+                                                    3. border-color: กำหนดสีของเส้นขอบ เช่น border-color: green<br></p>
+                                                    <br>
+                                                    <p><b>การกำหนดขอบเฉพาะด้าน</b></p>
+                                                    <p>border-top: กำหนดขอบด้านบน</p>
+                                                    <p>border-right: กำหนดขอบด้านขวา</p>
+                                                    <p>border-bottom: กำหนดขอบด้านล่าง</p>
+                                                    <p>border-left: กำหนดขอบด้านซ้าย</p>
+                                                    <div class="code-box">
+                                                        <h2>ตัวอย่าง CSS</h2>
+                                                        <pre><code class="language-css">
+                    .Quizbutton {
+                            background-color: rgb(88, 193, 235);
+                            border: 1px solid transparent;
+                            text-align: center;
+                            color: #ffffff;
+                            padding-top: 15px;
+                            border-radius: 11px;
+                            width: 120px;
+                             height: 80px;
+                            text-decoration: none;
+                            font-family: "Kanit", sans-serif;
+                        }
+                                                            </code></pre></div>
+                                                            
+                    </div>
                     <div class="bottombar">
                         <p class="lastfooter">Thai-Austrain Technical College</p>
                         <br>

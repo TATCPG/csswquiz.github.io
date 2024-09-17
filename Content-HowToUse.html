@@ -176,32 +176,84 @@
               </script>
                 <div class="Content-Container">
                     <div class="content-section">
-                        <div id="CSSintro"></div>
-                        <h2>แนะนำ CSS ขั้นพื้นฐาน</h2>
-                        <p>CSS คือ ภาษาที่ใช้สำหรับตกแต่งเอกสาร HTML/XHTML ให้มีหน้าตา สีสัน ระยะห่าง พื้นหลัง เส้นขอบและอื่นๆ ตามที่ต้องการ</p>
-                        <p>CSS ย่อมาจาก Cascading Style Sheets</p> 
-                        <p>มีลักษณะเป็นภาษาที่มีรูปแบบในการเขียน Syntax แบบเฉพาะและได้ถูกกำหนดมาตรฐานโดย W3C</p>
-                        <p>เป็นภาษาหนึ่งในการตกแต่งเว็บไซต์ ได้รับความนิยมอย่างแพร่หลาย</p>
-                        <div class="code-box">
-                            <h2>ตัวอย่าง CSS</h2>
-                            <pre><code class="language-css">
-                    body {
-                        background-color: lightblue;
-                    }
-                    
-                    h1 {
-                        color: white;
-                        text-align: center;
-                    }
-                    
-                    p {
-                        font-family: verdana;
-                        font-size: 20px;
-                    }
-                            </code></pre>
-                        
-                            </div>              
-                        </div>
+                            <h2 id="Main2">หลักการเรียกใช้งาน</h2>
+                            <p>เมื่อเบราว์เซอร์อ่านสไตล์ชีต มันจะจัดรูปแบบเอกสาร HTML ตาม ข้อมูลในสไตล์ชีต<br></p>
+                            <p><b>3 วิธีการเพิ่ม CSS ในเว็บไซต์</b><br></p>
+                            <p><b>External CSS</b></p>
+                            <p>ด้วย สไตล์ชีตภายนอกคุณสามารถเปลี่ยนรูปลักษณ์ของทั้งเว็บไซต์ได้โดยการเปลี่ยนแปลง ไฟล์เดียวเท่านั้น!
+                                แต่ละหน้า HTML ต้องมีการอ้างอิงไปยังแฟ้มสไตล์ชีตภายนอกภายใน องค์ประกอบ <link> ภายในส่วนหัว</p><br>
+                                <div class="code-box">
+                                    <h2>External</h2>
+                                    <pre><code class="language-css">
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;HTML Tutorial&lt;/title&gt;
+            &lt;link rel="stylesheet" href="Contentstyle.css"&gt; ใช้บรรทัดนี้ในการเรียกใช้ CSS ภายนอก
+        &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;h1&gt;This is a heading&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+                                        </code></pre></div>
+
+
+                            <p><b>Internal CSS</b></p>
+                            
+                            <p>อาจใช้สไตล์ชีตภายในหากหน้า HTML หน้าเดียวมีสไตล์ที่ไม่ซ้ํากัน
+
+                                ลักษณะภายในถูกกําหนดภายในองค์ประกอบ สไตล์ ภายในส่วนหัว ตอน</p>
+                                <div class="code-box">
+                                    <h2>Internal</h2>
+                                    <pre><code class="language-css">
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;HTML Tutorial&lt;/title&gt;
+        &lt;/head&gt;
+        
+            .box {
+                background-color: #f8f8f8;
+                border-left: 5px solid #4CAF50;
+                padding: 16px;
+                font-family: Consolas, 'Courier New', monospace;
+                margin: 20px 0;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 4px;
+            }
+            &lt;/style&gt;
+    &lt;body&gt;
+
+        &lt;h1&gt;This is a heading&lt;/h1&gt;
+        &lt;p class="box"&gt;This is a paragraph.&lt;/p&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+                                        </code></pre></div>
+
+
+                            <p><b>Inline CSS</b></p>
+                            <p>ลักษณะแบบอินไลน์อาจใช้เพื่อใช้ลักษณะที่ไม่ซ้ํากันสําหรับองค์ประกอบเดียว
+                            หากต้องการใช้สไตล์อินไลน์ ให้เพิ่มแอตทริบิวต์ style ให้กับองค์ประกอบที่เกี่ยวข้อง พื้นที่ style สามารถมีคุณสมบัติ CSS ใดก็ได้</p>
+                            <div class="code-box">
+                                <h2>Inline</h2>
+                                <pre><code class="language-css">
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;HTML Tutorial&lt;/title&gt;
+        &lt;link rel="stylesheet" href="Contentstyle.css"&gt;
+    &lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1 style="color:blue;text-align:center;"&gt;This is a heading&lt;/h1&gt;
+    &lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                                    </code></pre></div>
+                                    
+                    </div>
                     <div class="bottombar">
                         <p class="lastfooter">Thai-Austrain Technical College</p>
                         <br>

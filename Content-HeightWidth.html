@@ -176,32 +176,40 @@
               </script>
                 <div class="Content-Container">
                     <div class="content-section">
-                        <div id="CSSintro"></div>
-                        <h2>แนะนำ CSS ขั้นพื้นฐาน</h2>
-                        <p>CSS คือ ภาษาที่ใช้สำหรับตกแต่งเอกสาร HTML/XHTML ให้มีหน้าตา สีสัน ระยะห่าง พื้นหลัง เส้นขอบและอื่นๆ ตามที่ต้องการ</p>
-                        <p>CSS ย่อมาจาก Cascading Style Sheets</p> 
-                        <p>มีลักษณะเป็นภาษาที่มีรูปแบบในการเขียน Syntax แบบเฉพาะและได้ถูกกำหนดมาตรฐานโดย W3C</p>
-                        <p>เป็นภาษาหนึ่งในการตกแต่งเว็บไซต์ ได้รับความนิยมอย่างแพร่หลาย</p>
-                        <div class="code-box">
-                            <h2>ตัวอย่าง CSS</h2>
-                            <pre><code class="language-css">
-                    body {
-                        background-color: lightblue;
-                    }
-                    
-                    h1 {
-                        color: white;
-                        text-align: center;
-                    }
-                    
-                    p {
-                        font-family: verdana;
-                        font-size: 20px;
-                    }
-                            </code></pre>
-                        
-                            </div>              
-                        </div>
+                           
+                                
+                                <h2 id="Main10">การใช้งาน Height และ Width</h2>
+                                <p>width ใน CSS ใช้สำหรับกำหนดความกว้างขององค์ประกอบ (elements) บนหน้าเว็บ สามารถกำหนดความกว้างเป็นค่าคงที่หรือแบบยืดหยุ่นตามขนาดของหน้าจอหรือ container ที่อยู่รอบ ๆ องค์ประกอบนั้น</p>
+                                <br>
+                                <p><b>การใช้งานพื้นฐานของ width</b></p>
+                                <br>
+                                <div class="code-box">
+                                    <h2>ตัวอย่าง การใช้งาน</h2>
+                                    <pre><code class="language-css">
+                                        selector {
+                                            width: [ค่า];
+                                        }
+                                        </code></pre></div>
+                                        <br>
+                                        <p><b>ค่าของ height , width</b></p>
+                                        <br>
+                                        <p>- พิกเซล (px): หน่วยมาตรฐานที่ใช้มากที่สุด เช่น width: 300px</p>
+                                        <p>- เปอร์เซ็นต์ (%): กำหนดความกว้างเป็นเปอร์เซ็นต์ของ container ที่อยู่รอบ ๆ เช่น width: 50%</p>
+                                        <p>- หน่วย em: กำหนดความกว้างเป็นหน่วยที่อิงตามขนาดฟอนต์ขององค์ประกอบ เช่น width: 10em</p>
+                                        <p>- หน่วย rem: อิงจากขนาดฟอนต์ของ root element (html) เช่น width: 20rem</p>
+                                        <p>- หน่วยอื่น ๆ: เช่น vw (viewport width) และ vh (viewport height) ที่ใช้กำหนดความกว้างตามขนาดของหน้าจอ เช่น width: 50vw;</p>
+                                        <br>
+                                        <div class="code-box">
+                                            <h2>ตัวอย่าง CSS</h2>
+                                            <pre><code class="language-css">
+                                                .box {
+                                                    width: 20px;
+                                                    height: 20px;
+                                                    background-color: blue;
+                                                }
+                                                </code></pre></div>
+
+                    </div>
                     <div class="bottombar">
                         <p class="lastfooter">Thai-Austrain Technical College</p>
                         <br>
