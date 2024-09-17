@@ -45,10 +45,12 @@ p {
 
 .mainbuttongroup {
     position: absolute;
-    box-sizing: border-box;
     bottom: 45%;
-    left: 10%;
+    left: 8%;
     font-size: 1.4rem;
+    margin-top: 2vh;
+    max-width: 100%;
+    padding-left: 4vh;
 }
 
 .image-content{
@@ -87,28 +89,70 @@ p {
     height: 60vh;
 }
 
-@media screen 
-  and (max-width: 370px) {
-    .mainbuttongroup {
-      position: relative;
-      margin-top: 10%;
-      width: 90%;
-      left: 0;
-      margin-left: 10%;
-      margin-right: 0;
-      flex-grow: 1;
-      font-size: .8rem;
-    }
-  }
+/* small phone optimize */
+/* small phone optimize */
+/* small phone optimize */
+/* small phone optimize */
 
+@media screen 
+  and (max-width: 364px) {
+
+    .Content {
+    flex-direction: row;
+    max-width: 100vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    font-size: 1.6rem;
+  }
+  .image-content{
+    position: relative;
+    max-width: 100%;
+    left: 0;
+    margin-top: 5vh;
+    margin-bottom: 2%;
+    height: auto;
+}
+.indexpic {
+    display: block;
+    width: 25vh;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bottombar{
+    width: 100%;
+    padding-left: 1%;
+    padding-bottom: 10%;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+}
+
+p {
+    width: 100%;
+}
+.mainbuttongroup {
+  position: relative;
+  left: 0;
+  margin-top: 2vh;
+  max-width: 100%;
+  padding-left: 3vh;
+}
+}
+
+/* Normal phone optimize */
+/* Normal phone optimize */
+/* Normal phone optimize */
+/* Normal phone optimize */
 
 @media screen 
       and (max-width: 450px) 
-      and (min-width: 360px) 
+      and (min-width: 365px) 
       {
 
   html {
-    max-height: 100%;
+    max-height: 100vh;
     margin: 0;
 }
 
@@ -122,32 +166,30 @@ p {
       width: 100%;
     }
     .Content {
-      flex: 1;  
-      display: flex;
-        
         flex-direction: row;
-        max-width: 100%;
-        padding-left: 5%;
-        min-height: 30vh;
-        font-size: 1.3rem;
-        padding-right: 5%;
-        padding-bottom: 5%;
+        max-width: 100vh;
+        padding-left: 3vh;
+        padding-right: 3vh;
+        font-size: 1.6rem;
+        height: auto;
+        margin-bottom: 8vh;
     }
 
     .image-content{
         position: relative;
-        left: 0%;
-        flex-grow: 1;
-        margin-top: 8%;
+        max-width: 100%;
+        left: 0;
+        margin-top: 5vh;
         margin-bottom: 2%;
         height: auto;
     }
     .indexpic {
         display: block;
-        width: 50%;
+        width: 25vh;
         height: auto;
         position: relative;
-        margin-left: 25%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .bottombar{
         width: 100%;
@@ -164,21 +206,26 @@ p {
 
     .mainbuttongroup {
       position: relative;
-      margin-top: 10%;
-      width: 90%;
       left: 0;
-      margin-left: 8%;
-      margin-right: 0;
-      flex-grow: 1;
+      margin-top: 2vh;
+      max-width: 100%;
+      padding-left: 4vh;
     }
 
 }
+
+
 @media only screen and (max-width: 1920px) {
     .Content{
        display: flex;
        flex-direction: column;
     }
 } 
+
+/* Ipad and Tablet*/
+/* Ipad and Tablet*/
+/* Ipad and Tablet*/
+/* Ipad and Tablet*/
 
 @media screen 
   and (max-width: 1050px)
@@ -199,15 +246,16 @@ p {
       width: 100%;
     }
     .Content {
-        flex: 1;  
+        flex: 1;
         display: flex;
         flex-direction: column;
         max-width: 100%;
-        padding-left: 5%;
-        min-height: 30vh;
+        padding-left: 5vh;
+        padding-right: 5vh;
+        min-height: 10vh;
         font-size: 2rem;
-        padding-right: 5%;
-        padding-bottom: 5%;
+        margin-bottom: 5vh;
+        height: 20%;
     }
 
     .image-content{
@@ -240,10 +288,9 @@ p {
 
     .mainbuttongroup {
       position: relative;
-      margin-top: 10%;
-      width: 50%;
+      max-width: 100%;
       left: 0;
-      margin-left: 30%;
+      margin-left: 20vh;
       margin-right: 0;
       flex-grow: 1;
     }
