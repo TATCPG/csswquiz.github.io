@@ -685,6 +685,15 @@ code {
     and (min-width: 370px) 
     {
         
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .sidebar.close {
+        width: 10vh;
+      }
         .Topmenu {
             display: none;
             visibility: collapse;
@@ -721,10 +730,10 @@ code {
         display: flex;
         flex-direction: column;
         margin-top: 0;
-        margin-left: 0;
+        margin-left: 1%;
         left: 0;
         max-width: 100%;
-        padding-left: 4.5vh;
+        padding-left: 4.4%;
     }
 
     .bottombar {
@@ -853,9 +862,9 @@ code {
     max-width: 100%;
 }
 
-#touch:checked + .slide {height: 9vh;}
-#touch2:checked + .slide {height: 30vh;}
-#touch3:checked + .slide {height: 32vh;}
+#touch:checked + .slide {height: 15vh;}
+#touch2:checked + .slide {height: 40vh;}
+#touch3:checked + .slide {height: 45vh;}
 
 .content-section {
     background-color: #ffffff;
@@ -873,9 +882,8 @@ code {
 .Content-Container {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding-left: 2.5vh;
-    margin-left: 23vh;
+    max-width: 100%;
+    margin-left: 44%;
     margin-top: 14.5vh;
 }
 
@@ -883,11 +891,10 @@ code {
     background-color: #CDE8E5;
     height: 25vh;
     font-family: "Bruno Ace", sans-serif;
-    padding-left: 6vh;
+    padding-left: 2vh;
     bottom: 0;
     max-width: 100%;
     font-size: 0.2rem;
-    margin-top: 5vh;
 }
 
 .lastfooter {
@@ -903,8 +910,18 @@ code {
 }
 
 .scroll-containersidebar {
-    height: 80vh;
+    height: 90vh;
     overflow-y: scroll;
+}
+
+.nav-container {
+  width: 44.5%;
+  background-color: #CDE8E5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top : 15%;
+  z-index: 1;
 }
 
     
