@@ -863,7 +863,7 @@ code {
 }
 
 #touch:checked + .slide {height: 15vh;}
-#touch2:checked + .slide {height: 40vh;}
+#touch2:checked + .slide {height: 45vh;}
 #touch3:checked + .slide {height: 45vh;}
 
 .content-section {
