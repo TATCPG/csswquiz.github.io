@@ -692,7 +692,7 @@ code {
       }
 
       .sidebar.close {
-        width: 10vh;
+        width: 13%;
       }
         .Topmenu {
             display: none;
@@ -730,10 +730,10 @@ code {
         display: flex;
         flex-direction: column;
         margin-top: 0;
-        margin-left: 1%;
+        margin-left: 8%;
         left: 0;
-        max-width: 100%;
-        padding-left: 4.4%;
+        max-width: 94%;
+        padding-left: 3vh;
     }
 
     .bottombar {
@@ -827,7 +827,7 @@ code {
 /* for ipad */
 /* for ipad */
 @media screen 
-    and (max-width: 1280px)
+    and (max-width: 1200px)
     and (min-width: 760px)
     {
 
