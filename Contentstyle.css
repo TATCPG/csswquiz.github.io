@@ -862,9 +862,9 @@ code {
     max-width: 100%;
 }
 
-#touch:checked + .slide {height: 15vh;}
-#touch2:checked + .slide {height: 45vh;}
-#touch3:checked + .slide {height: 45vh;}
+#touch:checked + .slide {height: 12vh;}
+#touch2:checked + .slide {height: 44vh;}
+#touch3:checked + .slide {height: 44vh;}
 
 .content-section {
     background-color: #ffffff;
