@@ -228,7 +228,7 @@ p {
 /* Ipad and Tablet*/
 
 @media screen 
-  and (max-width: 1050px)
+  and (max-width: 1380px)
   and (min-width: 460px)
   {
   html {
@@ -290,7 +290,7 @@ p {
       position: relative;
       max-width: 100%;
       left: 0;
-      margin-left: 20vh;
+      margin-left: auto;
       margin-right: 0;
       flex-grow: 1;
     }

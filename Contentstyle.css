@@ -827,7 +827,7 @@ code {
 /* for ipad */
 /* for ipad */
 @media screen 
-    and (max-width: 1200px)
+    and (max-width: 1370px)
     and (min-width: 760px)
     {
 
@@ -885,6 +885,7 @@ code {
     max-width: 100%;
     margin-left: 44%;
     margin-top: 14.5vh;
+    padding-left: 0vh;
 }
 
 .bottombar {
