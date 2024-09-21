@@ -125,18 +125,25 @@
                 </div>
             </div>
 
-            <button type="button" class="btn" onclick="submitQuiz()" href="#result"><a href="#result" class="Submitbtn">Submit</a></button>
+            <button type="button" class="btn" onclick="submitQuiz()" href="#result"><a href="#result" onclick="showMessage()" class="Submitbtn">Submit</a></button>
             <button type="button" class="btn hidden" id="retryButton" onclick="retryQuiz()">Retry</button>
             <div class="Resultst" id="result"></div>
         </form>
+        <br>
+        <p id="response-message" style="display:none; color:green;"><a href="Content-Comment.html">เรียน การใช้งาน Comment</a></p>
+
+        <script>
+            function showMessage() {
+                // แสดงข้อความตอบกลับใต้ปุ่ม submit
+                var message = document.getElementById("response-message");
+                message.style.display = "block";
+            }
+        </script>
     </div>
     <script src="TESTCORE.js"></script>
     <div class="bottombar">
         <p>Bussiness Computer</p>
         <p>Thai-Austrain Technical Collece</p>
-        <p>แบบประเมิน : <a href="https://forms.gle/XvYv5NVA9sKUXne86" style="color: black;">https://forms.gle/XvYv5NVA9sKUXne86</a></p>
-        <div class="img">
-        <p><img src="qr from.png" height="88px", width="88px" ></p>
     </div>
     </div>
 </body>

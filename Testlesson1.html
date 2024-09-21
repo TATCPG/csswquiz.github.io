@@ -125,15 +125,33 @@
                 </div>
             </div>
 
-            <button type="button" class="btn" onclick="submitQuiz()" href="#result"><a href="#result" class="Submitbtn">Submit</a></button>
+            <button type="button" class="btn" onclick="submitQuiz()" href="#result"><a href="#result" onclick="showMessage()" class="Submitbtn">Submit</a></button>
             <button type="button" class="btn hidden" id="retryButton" onclick="retryQuiz()">Retry</button>
             <div class="Resultst" id="result"></div>
         </form>
+        <br>
+        <p id="response-message" style="display:none; color:green;"><a href="Content-HowToUse.html">เรียน หลักการเรียกใช้งาน</a></p>
+
+        <script>
+            function showMessage() {
+                // แสดงข้อความตอบกลับใต้ปุ่ม submit
+                var message = document.getElementById("response-message");
+                message.style.display = "block";
+            }
+        </script>
     </div>
     <script src="TESTCORE.js"></script>
     <div class="bottombar">
-        <p>Bussiness Computer</p>
-        <p>Thai-Austrain Technical Collece</p>
+                        <center><p class="lastfooter">Thai-Austrain Technical College</p></center>
+                        <br>
+                        <center><p class="lastfooter">Bussiness Computer</p></center>
+                        <br>
+                        <center><p class="lastfooterLink"> Reference : <a href="https://www.w3schools.com/css/" style="color: black;">https://www.w3schools.com/css/</a></p></center>
+                        <br>
+                        <center><p class="lastfooterLink">Github Reposity : <a href="https://github.com/TATCPG/tatcpg.github.io.git" style="color: black;">https://github.com/TATCPG/tatcpg.github.io.git</a></p></center>
+                        <br>
+                        <center><p class="lastfooter">เว็บไซต์นี้ถูกจัดทำเพื่อการศึกษา และไม่ได้แสวงผลกำไรใดๆทั้งสิ้น</p></center>
+                        
     </div>
 </body>
 </html>

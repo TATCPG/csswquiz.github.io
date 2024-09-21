@@ -122,10 +122,20 @@
                 </div>
             </div>
             
-            <button type="button" class="btn" onclick="submitQuiz()" href="#result"><a href="#result" class="Submitbtn">Submit</a></button>
+            <button type="button" class="btn" onclick="submitQuiz()" href="#result"><a href="#result" onclick="showMessage()" class="Submitbtn">Submit</a></button>
             <button type="button" class="btn hidden" id="retryButton" onclick="retryQuiz()">Retry</button>
             <div class="Resultst" id="result"></div>
         </form>
+        <br>
+        <p id="response-message" style="display:none; color:green;"><a href="Content-Font.html">เรียน การใช้งาน Font</a></p>
+
+        <script>
+            function showMessage() {
+                // แสดงข้อความตอบกลับใต้ปุ่ม submit
+                var message = document.getElementById("response-message");
+                message.style.display = "block";
+            }
+        </script>
     </div>
     <script src="TESTCORE.js"></script>
     <div class="bottombar">
