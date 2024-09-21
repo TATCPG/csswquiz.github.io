@@ -68,6 +68,15 @@ html {
     margin-right: 50px;
 }
 
+.aboutus2 {
+  color: #000000;
+  text-decoration: underline;
+  font-family: "Kanit", sans-serif;
+  font-size: 1.8rem;
+  position: absolute;
+  left: 90%;
+}
+
 .Content {
     background-color: #c9c9c9;
     display: flex;
@@ -238,15 +247,15 @@ html {
 
 
 #touch:checked + .slide {height: 13vh;}
-#touch2:checked + .slide {height: 44vh;}
-#touch3:checked + .slide {height: 45vh;}
+#touch2:checked + .slide {height: 42vh;}
+#touch3:checked + .slide {height: 43vh;}
 
 
 /*footer*/
 .bottombar {
     background-color: #CDE8E5;
-    height: 150px;
-    font-family: "Bruno Ace", sans-serif;
+    height: 15%;
+    margin-top: 8%;
     margin-left: 0px;
     padding-left: 5%;
     padding-top: 3%;
@@ -254,6 +263,14 @@ html {
     bottom: 0;
     width: 100%;
     
+}
+
+.lastfooter {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.lastfooterLink {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /*Text Decoration*/
@@ -280,10 +297,18 @@ p {
     padding-left: 30px;
 }
 
+.nextlesson {
+  font-size: 2rem;
+  padding-left: 5%;
+  margin-bottom: 2%;
+  text-decoration: none;
+  color: #191c4e;
+}
+
 .content-section {
     background-color: #ffffff;
     color: #2c3e50;
-    padding-top: 20px;
+    padding-top: 15%;
     padding-right: 0px;
     padding-bottom: 0;
     border-radius: 8px;
@@ -294,22 +319,22 @@ p {
 
 /*jump to section adjust */
 #CSSintro {
-    padding-top: 120px; /* ระยะห่างจากด้านบนที่พอเหมาะ */
+    padding-top: 135px; /* ระยะห่างจากด้านบนที่พอเหมาะ */
     margin-top: -120px; /* ค่าลบเท่ากับ padding */
 }
 
 #CSSHistory {
-    padding-top: 120px; 
+    padding-top: 135px; 
     margin-top: -120px;
 }
 
 #Good-Bad {
-    padding-top: 120px; 
+    padding-top: 135px; 
     margin-top: -120px; 
 }
 
  #Main1 , #Main2 , #Main3 , #Main4 , #Main5 , #Main6 , #Main7 , #Main8 , #Main9 , #Main10 {   /* เพิ่มให้ถึง  main10 */
-    padding-top: 120px; 
+    padding-top: 135px; 
     margin-top: -120px; 
 }
 
@@ -739,7 +764,6 @@ code {
     .bottombar {
         background-color: #CDE8E5;
         height: 25vh;
-        font-family: "Bruno Ace", sans-serif;
         padding-left: 6vh;
         bottom: 0;
         max-width: 100%;
